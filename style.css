@@ -1,0 +1,89 @@
+body{
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(0, 100%, 74%);
+    padding-top: 80px;  
+}
+
+
+
+.partOne {
+   color: #fff;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.box {
+    background-color: #fff;
+    padding-top: 5px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    
+}
+
+input {
+    margin: 10px;
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.blueBtn {
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+.greenBtn {
+    width: 95%;
+    padding: 10px;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    border-radius: 4px;
+}
+span {
+    color: red ;
+}
+.text {
+    font-size: smaller;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 1000px){
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 1000px;
+}}
+
+@media only screen and (max-width: 600px){
+    .blueBtn {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+.partOne {
+    text-align: center;
+}
+body {
+    background-image: url(images/bg-intro-mobile.png);
+}
+}
+
+button {
+    font-weight: bolder;
+}
