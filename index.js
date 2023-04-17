@@ -1,4 +1,4 @@
-// Create a function to validate input fields
+
 function validateInput(inputField) {
     if (inputField.value === '') {
       inputField.nextElementSibling.style.display = 'block';
@@ -10,8 +10,6 @@ function validateInput(inputField) {
       return true;
     }
   }
-  
-  // Add event listeners to all input fields
   const firstName = document.getElementById('firstName');
   const lastName = document.getElementById('lastName');
   const email = document.getElementById('email');
@@ -33,13 +31,13 @@ function validateInput(inputField) {
     validateInput(password);
   });
   
-  //Add event listener to form submit button
+  
   const submitButton = document.getElementById('submitButton');
   const form = document.getElementById('form');
   const error = document.getElementById('error');
   
   form.addEventListener('submit', function(e) {
-    e.preventDefault(); // prevent form submission
+    e.preventDefault(); 
   
     const isValid = validateInput(firstName) && validateInput(lastName) && validateInput(email) && validateInput(password);
   
@@ -47,8 +45,6 @@ function validateInput(inputField) {
       error.innerHTML = 'Please fill in all fields';
       return;
     }
-  
-    // If form is valid, submit it
-    //...
+
   });
   
